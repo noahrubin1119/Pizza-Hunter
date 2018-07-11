@@ -10,13 +10,14 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     var region = MKCoordinateRegion()
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.delegate = self
         locationManager.requestWhenInUseAuthorization()
         mapView.showsUserLocation = true
         locationManager.delegate = self
@@ -37,6 +38,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.setRegion(region, animated: true)
     }
     
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = "pizza"
+        request.region = region
+        let search = MKLocalSearch(request: request)
+        search.start { (response, error) in
+            if let response = response {
+                for mapItem in response.mapItems {
+                    print(mapItem.name!)
+                }
+            }
+        }
+    }
     
 
 
