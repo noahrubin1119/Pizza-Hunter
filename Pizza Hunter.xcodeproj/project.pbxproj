@@ -14,6 +14,7 @@
 		4FA28BC820F67F1500AD3840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA28BC620F67F1500AD3840 /* LaunchScreen.storyboard */; };
 		4FA28BD320F67F1500AD3840 /* Pizza_HunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA28BD220F67F1500AD3840 /* Pizza_HunterTests.swift */; };
 		4FA28BDE20F67F1500AD3840 /* Pizza_HunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA28BDD20F67F1500AD3840 /* Pizza_HunterUITests.swift */; };
+		4FA28BEC20F68D9200AD3840 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA28BEB20F68D9200AD3840 /* LocationDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4FA28BD920F67F1500AD3840 /* Pizza HunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pizza HunterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA28BDD20F67F1500AD3840 /* Pizza_HunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza_HunterUITests.swift; sourceTree = "<group>"; };
 		4FA28BDF20F67F1500AD3840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA28BEB20F68D9200AD3840 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				4FA28BBD20F67F1100AD3840 /* AppDelegate.swift */,
 				4FA28BBF20F67F1100AD3840 /* ViewController.swift */,
+				4FA28BEB20F68D9200AD3840 /* LocationDetailsViewController.swift */,
 				4FA28BC120F67F1100AD3840 /* Main.storyboard */,
 				4FA28BC420F67F1500AD3840 /* Assets.xcassets */,
 				4FA28BC620F67F1500AD3840 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA28BEC20F68D9200AD3840 /* LocationDetailsViewController.swift in Sources */,
 				4FA28BC020F67F1100AD3840 /* ViewController.swift in Sources */,
 				4FA28BBE20F67F1100AD3840 /* AppDelegate.swift in Sources */,
 			);
