@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import MapKit
+
 
 class LocationDetailsViewController: UIViewController {
-
+    var selectedMapItem = MKMapItem()
+    var mapItems = [MKMapItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(selectedMapItem.name!)
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +24,7 @@ class LocationDetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*
