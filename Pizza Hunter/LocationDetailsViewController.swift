@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-
+import SafariServices
 
 class LocationDetailsViewController: UIViewController {
     var selectedMapItem = MKMapItem()
@@ -28,6 +28,11 @@ class LocationDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func websiteTapped(_ sender: Any) {
+        if let url = selectedMapItem.url {
+            present(SFSafariViewController(url: url), animated: true)
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         nameLabel.text = selectedMapItem.placemark.name

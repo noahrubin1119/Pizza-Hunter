@@ -82,6 +82,9 @@
                                             <constraint firstAttribute="width" constant="98" id="llM-id-hYz"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="web"/>
+                                        <connections>
+                                            <action selector="websiteTapped:" destination="XHI-FH-8eW" eventType="touchUpInside" id="J5R-Lt-Vn4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJf-C3-jAA">
                                         <rect key="frame" x="142" y="26" width="98" height="98"/>
