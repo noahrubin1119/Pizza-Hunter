@@ -91,6 +91,9 @@
                                             <constraint firstAttribute="height" constant="98" id="a9Y-Br-Ch3"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="walk"/>
+                                        <connections>
+                                            <action selector="onDirectionsTapped:" destination="XHI-FH-8eW" eventType="touchUpInside" id="LI4-en-VVi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
